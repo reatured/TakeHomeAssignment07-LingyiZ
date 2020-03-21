@@ -1,5 +1,7 @@
 package com.example.takehomeassignment07_lingyiz;
 
+import androidx.cardview.widget.CardView;
+
 class Place {
     String name;
     String description;

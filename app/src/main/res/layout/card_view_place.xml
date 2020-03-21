@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/card_view">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/tokyo_tower"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tokyo"
+            android:textSize="36dp"
+            android:layout_toRightOf="@id/photo"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="24dp"
+            android:layout_toRightOf="@id/photo"
+            android:layout_below="@id/name"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

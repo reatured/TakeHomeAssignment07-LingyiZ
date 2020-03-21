@@ -39,7 +39,7 @@ public class SecondDisplayWindow extends AppCompatActivity {
     }
 
     private void phaseToLastWindow() {
-        Intent i = new Intent(this, RecyclerView.class);
+        Intent i = new Intent(this, ThirdDisplayWindow.class);
         startActivity(i);
     }
 
