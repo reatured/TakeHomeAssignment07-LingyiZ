@@ -13,6 +13,7 @@ import java.util.List;
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceViewHolder> {
     List<Place> places;
     Context context;
+
     private RecyclerView.ViewHolder holder;
     private int position;
 
@@ -32,7 +33,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceViewHolder> {
     public void onBindViewHolder(@NonNull PlaceViewHolder holder, int position) {
         Place place = places.get(position);
         holder.placeName.setText(place.name);
-        holder.placeDes.setText(place.name);
+        holder.placeDes.setText(place.description);
         holder.placeImg.setImageResource(place.photoID);
     }
 
